@@ -1,8 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.flutter_05">
-   <application
-        android:label="flutter_05"
-        android:name="${applicationName}"
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <meta-data android:name="com.kakao.sdk.AppKey" android:value="3c1b2027a3176d0fc5b96ae7dd4a49b7"/>
+    <application
+        android:name="io.flutter.app.FlutterApplication"
+        android:label="kakaomap"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true">
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
